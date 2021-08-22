@@ -1,3 +1,11 @@
+import { HeadTag } from "../global";
+
 export default function Home() {
-  return <h1>My page</h1>
+  return (
+    <div>
+      <HeadTag title="Beats Shop" />
+
+      <h1>My page</h1>
+    </div>
+  );
 };
