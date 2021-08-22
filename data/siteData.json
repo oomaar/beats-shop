@@ -1,0 +1,24 @@
+{
+  "headerData": [
+    {
+      "id": 1,
+      "href": "#home",
+      "title": "Home"
+    },
+    {
+      "id": 2,
+      "href": "#specs",
+      "title": "Specs"
+    },
+    {
+      "id": 3,
+      "href": "#case",
+      "title": "Case"
+    },
+    {
+      "id": 4,
+      "href": "#products",
+      "title": "Products"
+    }
+  ]
+}
