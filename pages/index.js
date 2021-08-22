@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import { Header } from "../components";
-import { HeadTag } from "../global";
+import { Header, Feature } from "../components";
+import { HeadTag, Main } from "../global";
 import siteData from "../data/siteData.json";
 
 export default function Home() {
@@ -9,6 +9,9 @@ export default function Home() {
       <HeadTag title="Beats Shop" />
 
       <Header data={siteData.headerData} />
+      <Main>
+        <Feature />
+      </Main>
     </Application>
   );
 };
