@@ -1,11 +1,14 @@
+import styled from "styled-components";
 import { HeadTag } from "../global";
 
 export default function Home() {
   return (
-    <div>
+    <Application>
       <HeadTag title="Beats Shop" />
 
       <h1>My page</h1>
-    </div>
+    </Application>
   );
 };
+
+const Application = styled.div``;
