@@ -7,7 +7,7 @@ export const MainHeader = styled.header`
   top: 0;
   left: 0;
   z-index: 100;
-  background: transparent;
+  background: ${({ scrollHeader, theme }) => scrollHeader ? theme.colors.bodyColor : "transparent"};
 `;
 
 export const Nav = styled.nav`

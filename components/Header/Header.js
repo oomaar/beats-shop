@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Container } from "../../global";
 import {
     MainHeader,
@@ -14,6 +14,9 @@ import {
 
 export const Header = ({ data }) => {
     const [showMenu, setShowMenu] = useState(false);
+    const [scrollHeader, setScrollHeader] = useState(false);
+
+    const showScorllHeader = () => window.scrollY > 100 ? setScrollHeader(true) : setScrollHeader(false);
 
     const linksList = data.map(link => (
         <NavItem key={link.id}>
@@ -21,8 +24,12 @@ export const Header = ({ data }) => {
         </NavItem>
     ));
 
+    useEffect(() => {
+        window.addEventListener("scroll", showScorllHeader);
+    }, []);
+
     return (
-        <MainHeader>
+        <MainHeader scrollHeader={scrollHeader}>
             <Container>
                 <Nav>
                     <Logo href="#">
