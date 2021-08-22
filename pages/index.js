@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Header, Feature, Sponsor, Specs, Case, Discount } from "../components";
+import { Header, Feature, Sponsor, Specs, Case, Discount, Products } from "../components";
 import { HeadTag, Main } from "../global";
 import siteData from "../data/siteData.json";
 
@@ -15,6 +15,7 @@ export default function Home() {
         <Specs data={siteData.specsData} />
         <Case data={siteData.caseData} />
         <Discount />
+        <Products />
       </Main>
     </Application>
   );
