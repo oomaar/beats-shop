@@ -7,4 +7,5 @@ export {
     SectionTitle,
     Main,
     Container,
+    Button
 } from "./styles/GlobalStyle";

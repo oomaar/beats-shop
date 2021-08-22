@@ -119,3 +119,19 @@ export const Container = styled.div`
   max-width: 968px;
   margin: 0 1.5rem;
 `;
+
+// Buttons
+export const Button = styled.a`
+  display: ${({ flex }) => flex ? "inline-flex" : "inline-block"};
+  align-items: ${({ flex }) => flex && "center"};
+  column-gap: ${({ flex }) => flex && "0.75rem"};
+  background-color: ${({ theme }) => theme.colors.blackColor};
+  color: ${({ theme }) => theme.colors.whiteColor};
+  padding: 1rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: 0.4s;
+
+  :hover {
+    background-color: ${({ theme }) => theme.colors.blackColorAlt};
+  }
+`;
