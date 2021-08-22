@@ -53,5 +53,37 @@
   ],
   "caseData": {
     "text": "With a comfortable and adaptable case so that you can store it whereever you want, and keep your durability forever."
-  }
+  },
+  "productsData": [
+    {
+      "id": 1,
+      "img": "/img/product1.png",
+      "title": "black",
+      "price": 249
+    },
+    {
+      "id": 2,
+      "img": "/img/product2.png",
+      "title": "Red Black",
+      "price": 259
+    },
+    {
+      "id": 3,
+      "img": "/img/product3.png",
+      "title": "Night Black",
+      "price": 269
+    },
+    {
+      "id": 4,
+      "img": "/img/product4.png",
+      "title": "Navy Blue",
+      "price": 279
+    },
+    {
+      "id": 5,
+      "img": "/img/product5.png",
+      "title": "Twilight Gray",
+      "price": 299
+    }
+  ]
 }

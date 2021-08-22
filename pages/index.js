@@ -15,7 +15,7 @@ export default function Home() {
         <Specs data={siteData.specsData} />
         <Case data={siteData.caseData} />
         <Discount />
-        <Products />
+        <Products data={siteData.productsData} />
       </Main>
     </Application>
   );
