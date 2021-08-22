@@ -16,7 +16,7 @@ export default function Home() {
         <Case data={siteData.caseData} />
         <Discount />
         <Products data={siteData.productsData} />
-        <Footer />
+        <Footer data={siteData.footerData} />
       </Main>
     </Application>
   );

@@ -85,5 +85,57 @@
       "title": "Twilight Gray",
       "price": 299
     }
-  ]
+  ],
+  "footerData": {
+    "productsLinks": [
+      {
+        "id": 1,
+        "title": "Headphones"
+      },
+      {
+        "id": 2,
+        "title": "Earphones"
+      },
+      {
+        "id": 3,
+        "title": "Earbuds"
+      },
+      {
+        "id": 4,
+        "title": "Accesories"
+      }
+    ],
+    "supportLinks": [
+      {
+        "id": 1,
+        "title": "Product Help"
+      },
+      {
+        "id": 2,
+        "title": "Register"
+      },
+      {
+        "id": 3,
+        "title": "Updates"
+      },
+      {
+        "id": 4,
+        "title": "Provides"
+      }
+    ],
+    "socialLinks": [
+      {
+        "id": 1,
+        "icon": "ri-facebook-fill"
+      },
+      {
+        "id": 2,
+        "icon": "ri-instagram-fill"
+      },
+      {
+        "id": 3,
+        "icon": "ri-twitter-fill"
+      }
+    ]
+  }
 }
