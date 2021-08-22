@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { Header, Feature, Sponsor, Specs, Case, Discount, Products, Footer } from "../components";
-import { HeadTag, Main } from "../global";
+import { HeadTag, Main, ScrollupLink } from "../global";
 import siteData from "../data/siteData.json";
 
 export default function Home() {
@@ -18,6 +18,7 @@ export default function Home() {
         <Products data={siteData.productsData} />
         <Footer data={siteData.footerData} />
       </Main>
+      <ScrollupLink />
     </Application>
   );
 };

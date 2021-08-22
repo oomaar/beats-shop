@@ -1,4 +1,5 @@
 export { HeadTag } from "./HeadTag/HeadTag";
+export { ScrollupLink } from "./ScrollupLink/ScrollupLink";
 export {
     GlobalStyle,
     headerHeight,
