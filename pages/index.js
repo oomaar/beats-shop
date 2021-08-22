@@ -10,7 +10,7 @@ export default function Home() {
 
       <Header data={siteData.headerData} />
       <Main>
-        <Feature />
+        <Feature data={siteData.featureData} />
       </Main>
     </Application>
   );
