@@ -23,5 +23,32 @@
   ],
   "featureData": {
     "text": "Enjoy award-winning Beats sound with wireless listening freedom and a sleek, streamlined design with comfortable padded earphones, delivering first-rate playback."
-  }
+  },
+  "specsData": [
+    {
+      "id": 1,
+      "icon": "ri-bluetooth-line",
+      "title": "Connection",
+      "subTitle": "Bluetooth v5.2"
+    },
+    {
+      "id": 2,
+      "icon": "ri-battery-charge-line",
+      "title": "Battery",
+      "subTitle": "Duration 40h"
+    },
+    {
+      "id": 3,
+      "icon": "ri-plug-line",
+      "title": "Load",
+      "subTitle": "Fast charge 4.2-AAC"
+    },
+    {
+      "id": 4,
+      "icon": "ri-mic-line",
+      "title": "Microphone",
+      "subTitle": "Supports Apple Siri ",
+      "text": "and Google"
+    }
+  ]
 }
