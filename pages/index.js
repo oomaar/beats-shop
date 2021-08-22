@@ -13,7 +13,7 @@ export default function Home() {
         <Feature data={siteData.featureData} />
         <Sponsor />
         <Specs data={siteData.specsData} />
-        <Case />
+        <Case data={siteData.caseData} />
       </Main>
     </Application>
   );
