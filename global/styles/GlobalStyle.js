@@ -104,9 +104,9 @@ export const SectionTitle = styled.h3`
   font-size: ${({ theme }) => theme.fonts.biggerFontSize};
   margin-bottom: 2.5rem;
   text-align: center;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
+  color: ${({ gradient }) => gradient && "transparent"};
+  -webkit-background-clip: ${({ gradient }) => gradient && "text"};
+  background-clip: ${({ gradient }) => gradient && "text"};
 `;
 
 // Main (For animations and images)
