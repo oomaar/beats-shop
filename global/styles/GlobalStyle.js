@@ -127,9 +127,13 @@ export const Button = styled.a`
   column-gap: ${({ flex }) => flex && "0.75rem"};
   background-color: ${({ theme }) => theme.colors.blackColor};
   color: ${({ theme }) => theme.colors.whiteColor};
-  padding: 1rem 1.25rem;
-  border-radius: 0.5rem;
   transition: 0.4s;
+  /* Products Button */
+  position: ${({ products }) => products && "absolute"};
+  right: ${({ products }) => products && "0.5rem"};
+  bottom: ${({ products }) => products && "0.5rem"};
+  padding: ${({ products }) => products ? "0.5rem" : "1rem 1.25rem"};
+  border-radius: ${({ products }) => products ? "0.35rem" : "0.5rem"};
 
   :hover {
     background-color: ${({ theme }) => theme.colors.blackColorAlt};
