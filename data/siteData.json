@@ -3,22 +3,26 @@
     {
       "id": 1,
       "href": "#home",
-      "title": "Home"
+      "title": "Home",
+      "section": "home"
     },
     {
       "id": 2,
       "href": "#specs",
-      "title": "Specs"
+      "title": "Specs",
+      "section": "specs"
     },
     {
       "id": 3,
       "href": "#case",
-      "title": "Case"
+      "title": "Case",
+      "section": "case"
     },
     {
       "id": 4,
       "href": "#products",
-      "title": "Products"
+      "title": "Products",
+      "section": "products"
     }
   ],
   "featureData": {
