@@ -8,7 +8,7 @@ import {
 
 export const Case = ({ data }) => {
     return (
-        <Section>
+        <Section id="case">
             <SectionTitle gradient>Case</SectionTitle>
 
             <Container>

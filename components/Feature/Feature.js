@@ -16,7 +16,7 @@ import {
 
 export const Feature = ({ data }) => {
     return (
-        <Section>
+        <Section id="home">
             <Container>
                 <FeatureContainer>
                     <ImageContainer>

@@ -26,7 +26,7 @@ export const Specs = ({ data }) => {
     ));
 
     return (
-        <Section>
+        <Section id="specs">
             <SpecsContainer>
                 <SectionTitle gradient>Specs</SectionTitle>
 

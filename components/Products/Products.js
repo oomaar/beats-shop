@@ -22,7 +22,7 @@ export const Products = ({ data }) => {
         </ProductsCard>
     ));
     return (
-        <Section>
+        <Section id="products">
             <SectionTitle gradient>Choose <br /> Your Style</SectionTitle>
 
             <Container>
