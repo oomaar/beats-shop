@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 // Viewprots
 export const smallScreen = "340px";
+export const mediumScreen = "576px";
 
 export const headerHeight = '3rem';
 const hueColor = 206;
