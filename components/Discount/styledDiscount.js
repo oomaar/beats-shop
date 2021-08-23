@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { mediumScreen } from '../../global/styles/GlobalStyle';
 
 export const DiscountContainer = styled.div`
   display: grid;
@@ -13,6 +14,16 @@ export const DiscountContainer = styled.div`
     position: absolute;
     top: 4rem;
     right: -11rem;
+
+    @media screen and (min-width: ${mediumScreen}) {
+      position: initial;
+    }
+  }
+
+  @media screen and (min-width: ${mediumScreen}) {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
   }
 `;
 
