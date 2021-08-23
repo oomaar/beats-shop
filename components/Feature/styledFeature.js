@@ -1,8 +1,12 @@
 import styled from 'styled-components';
-import { smallScreen } from '../../global/styles/GlobalStyle';
+import { mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
 
 export const FeatureContainer = styled.div`
   display: grid;
+
+  @media screen and (min-width: ${mediumScreen}) {
+    grid-template-columns: 0.8fr 1fr;
+  }
 `;
 
 export const ImageContainer = styled.div`
@@ -15,6 +19,11 @@ export const ImageContainer = styled.div`
     @media screen and (max-width: ${smallScreen}) {
       width: 200px;
     }
+
+    @media screen and (min-width: ${mediumScreen}) {
+      top: -7rem;
+      left: 0;
+    }
   }
 `;
 
@@ -23,6 +32,10 @@ export const HomeData = styled.div`
 
   @media screen and (max-width: ${smallScreen}) {
     padding: 1rem;
+  }
+
+  @media screen and (min-width: ${mediumScreen}) {
+    padding: 2rem;
   }
 `;
 
