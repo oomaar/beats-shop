@@ -1,8 +1,14 @@
 import styled from 'styled-components';
-import { smallScreen } from '../../global/styles/GlobalStyle';
+import { mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
 
 export const SpecsContainer = styled.div`
   display: grid;
+
+  @media screen and (min-width: ${mediumScreen}) {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+  }
 `;
 
 export const SpecsSubContainer = styled.div`
@@ -47,5 +53,9 @@ export const Img = styled.img`
 
   @media screen and (max-width: ${smallScreen}) {
     width: 200px;
+  }
+
+  @media screen and (min-width: ${mediumScreen}) {
+    position: initial;
   }
 `;
