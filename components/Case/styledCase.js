@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
+import { largeScreen, mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
 
 export const CaseContainer = styled.div`
   display: grid;
@@ -32,6 +32,10 @@ export const Img = styled.img`
   @media screen and (min-width: ${mediumScreen}) {
     position: initial;
   }
+
+  @media screen and (min-width: ${largeScreen}) {
+    width: 300px;
+  }
 `;
 
 export const CaseData = styled.div``;
@@ -39,4 +43,8 @@ export const CaseData = styled.div``;
 export const Text = styled.p`
   margin-bottom: 1.5rem;
   line-height: ${({ theme }) => theme.fonts.textLineHeight};
+
+  @media screen and (min-width: ${largeScreen}) {
+    margin-bottom: 2rem;
+  }
 `;
