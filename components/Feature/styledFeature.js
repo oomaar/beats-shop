@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { smallScreen } from '../../global/styles/GlobalStyle';
 
 export const FeatureContainer = styled.div`
   display: grid;
@@ -10,11 +11,19 @@ export const ImageContainer = styled.div`
     position: absolute;
     top: -16rem;
     right: 1.5rem;
+
+    @media screen and (max-width: ${smallScreen}) {
+      width: 200px;
+    }
   }
 `;
 
 export const HomeData = styled.div`
   padding-top: 5rem;
+
+  @media screen and (max-width: ${smallScreen}) {
+    padding: 1rem;
+  }
 `;
 
 export const HomeHeader = styled.div`
@@ -31,6 +40,11 @@ export const Title = styled.h1`
   top: -6rem;
   left: 1rem;
   line-height: 6rem;
+
+  @media screen and (max-width: ${smallScreen}) {
+    top: -4rem;
+    font-size: ${({ theme }) => theme.fonts.biggerFontSize};
+  }
 `;
 
 export const SubTitle = styled.h2`
@@ -49,6 +63,10 @@ export const FooterTitle = styled.h3`
 export const Text = styled.p`
   margin-bottom: 2.5rem;
   line-height: ${({ theme }) => theme.fonts.textLineHeight};
+
+  @media screen and (max-width: ${smallScreen}) {
+    font-size: ${({ theme }) => theme.fonts.smallFontSize};
+  }
 `;
 
 export const HomePrice = styled.span`
