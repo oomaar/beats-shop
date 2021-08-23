@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
+import { largeScreen, mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
 
 export const ProductsContainer = styled.div`
   display: grid;
@@ -16,6 +16,12 @@ export const ProductsContainer = styled.div`
     grid-template-columns: repeat(3, 142px);
     justify-content: center;
   }
+
+  @media screen and (min-width: ${largeScreen}) {
+    grid-template-columns: repeat(3, 162px);
+    gap: 6rem 3rem;
+    padding-top: 5rem;
+  }
 `;
 
 export const ProductsCard = styled.article`
@@ -25,6 +31,11 @@ export const ProductsCard = styled.article`
   padding: 0.75rem;
   border-radius: 0.5rem;
   display: grid;
+
+  @media screen and (min-width: ${largeScreen}) {
+    height: 152px;
+    padding: 0.85rem;
+  }
 `;
 
 export const ProductsContent = styled.div`
@@ -37,6 +48,10 @@ export const Img = styled.img`
   inset: 0;
   margin: 0 auto;
   top: -3rem;
+
+  @media screen and (min-width: ${largeScreen}) {
+    width: 95px;
+  }
 `;
 
 export const ProductsTitle = styled.h3`
