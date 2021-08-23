@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { largeScreen, mediumScreen } from '../../global/styles/GlobalStyle';
+import { largeScreen, mediumScreen, xLargeScreen } from '../../global/styles/GlobalStyle';
 
 export const DiscountContainer = styled.div`
   display: grid;
@@ -17,6 +17,10 @@ export const DiscountContainer = styled.div`
 
     @media screen and (min-width: ${mediumScreen}) {
       position: initial;
+    }
+
+    @media screen and (min-width: ${xLargeScreen}) {
+      width: 350px;
     }
   }
 
