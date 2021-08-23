@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { largeScreen } from '../../global/styles/GlobalStyle';
+import { largeScreen, xLargeScreen } from '../../global/styles/GlobalStyle';
 
 export const FooterContainer = styled.footer`
   display: grid;
@@ -8,6 +8,10 @@ export const FooterContainer = styled.footer`
 
   @media screen and (min-width: ${largeScreen}) {
     grid-template-columns: 0.4fr 0.7fr 0.7fr 1fr;
+  }
+
+  @media screen and (min-width: ${xLargeScreen}) {
+    padding-top: 3rem;
   }
 `;
 
@@ -80,6 +84,10 @@ export const SocialLink = styled.a`
 export const FooterCopy = styled.div`
   margin-top: 5rem;
   text-align: center;
+
+  @media screen and (min-width: ${xLargeScreen}) {
+    margin-top: 9rem;
+  }
 `;
 
 export const HSix = styled.h6`

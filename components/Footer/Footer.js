@@ -69,11 +69,11 @@ export const Footer = ({ data }) => {
                             {socialLinks}
                         </FooterSocial>
                     </FooterContent>
-
-                    <FooterCopy>
-                        <HSix>&#169; Beats. All Rights Reserved</HSix>
-                    </FooterCopy>
                 </FooterContainer>
+
+                <FooterCopy>
+                    <HSix>&#169; Beats. All Rights Reserved</HSix>
+                </FooterCopy>
             </Container>
         </Section>
     )
