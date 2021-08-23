@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { largeScreen, mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
+import { largeScreen, mediumScreen, smallScreen, xLargeScreen } from '../../global/styles/GlobalStyle';
 
 export const FeatureContainer = styled.div`
   display: grid;
@@ -33,6 +33,11 @@ export const ImageContainer = styled.div`
     @media screen and (min-width: ${largeScreen}) {
       top: -9rem;
       left: 4rem;
+    }
+
+    @media screen and (min-width: ${xLargeScreen}) {
+      width: 300px;
+      top: -15rem;
     }
   }
 `;
@@ -72,6 +77,11 @@ export const Title = styled.h1`
     top: -4rem;
     font-size: ${({ theme }) => theme.fonts.biggerFontSize};
   }
+
+  @media screen and (min-width: ${xLargeScreen}) {
+    top: -5rem;
+    left: 3.5rem;
+  }
 `;
 
 export const SubTitle = styled.h2`
@@ -93,6 +103,10 @@ export const Text = styled.p`
 
   @media screen and (max-width: ${smallScreen}) {
     font-size: ${({ theme }) => theme.fonts.smallFontSize};
+  }
+
+  @media screen and (min-width: ${xLargeScreen}) {
+    padding-right: 5rem;
   }
 `;
 
