@@ -5,6 +5,7 @@ import styled from 'styled-components';
 export const smallScreen = "340px";
 export const mediumScreen = "576px";
 export const largeScreen = "767px";
+export const xLargeScreen = "1024px";
 
 export const headerHeight = '3rem';
 const hueColor = 206;
@@ -155,6 +156,10 @@ export const Container = styled.div`
 
   @media screen and (max-width: ${smallScreen}) {
     margin: 0 1rem;
+  }
+
+  @media screen and (min-width: ${xLargeScreen}) {
+    margin: 0 auto;
   }
 `;
 
