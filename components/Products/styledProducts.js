@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { smallScreen } from '../../global/styles/GlobalStyle';
+import { mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
 
 export const ProductsContainer = styled.div`
   display: grid;
@@ -9,6 +9,11 @@ export const ProductsContainer = styled.div`
 
   @media screen and (max-width: ${smallScreen}) {
     grid-template-columns: 142px;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: ${mediumScreen}) {
+    grid-template-columns: repeat(3, 142px);
     justify-content: center;
   }
 `;
