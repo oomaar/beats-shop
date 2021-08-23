@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { headerHeight } from '../../global';
+import { Link } from "react-scroll";
 
 export const MainHeader = styled.header`
   width: 100%;
@@ -41,9 +42,16 @@ export const NavList = styled.ul`
   row-gap: 1rem;
 `;
 
-export const NavItem = styled.li``;
+export const NavItem = styled.li`
+  .active-link {
+    background: ${({ theme }) => theme.colors.whiteColor};
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+`;
 
-export const NavLink = styled.a`
+export const NavLink = styled(Link)`
   font-size: ${({ theme }) => theme.fonts.h2FontSize};
   text-transform: uppercase;
   font-weight: ${({ theme }) => theme.fonts.fontWeight.semiBold};

@@ -20,10 +20,22 @@ export const Header = ({ data }) => {
 
     const linksList = data.map(link => (
         <NavItem key={link.id}>
-            <NavLink onClick={() => setShowMenu(false)} href={link.href}>{link.title}</NavLink>
+            <NavLink
+                href={link.href}
+                to={link.section}
+                smooth={true}
+                duration={50}
+                spy={true}
+                exact="true"
+                offset={-50}
+                activeClass="active-link"
+                onClick={() => setShowMenu(false)}
+            >
+                {link.title}
+            </NavLink>
         </NavItem>
     ));
-
+    // onClick={() => activeLink(link.href)}
     useEffect(() => {
         window.addEventListener("scroll", showScorllHeader);
     }, []);
