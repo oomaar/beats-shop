@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { smallScreen } from '../../global/styles/GlobalStyle';
+import { mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
 
 export const CaseContainer = styled.div`
   display: grid;
@@ -8,6 +8,13 @@ export const CaseContainer = styled.div`
 
   @media screen and (max-width: ${smallScreen}) {
     grid-template-columns: 0.6fr 1fr;
+  }
+
+  @media screen and (min-width: ${mediumScreen}) {
+    grid-template-columns: max-content 250px;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2rem;
   }
 `;
 
@@ -20,6 +27,10 @@ export const Img = styled.img`
     width: 220px;
     top: -2rem;
     left: -9rem;
+  }
+
+  @media screen and (min-width: ${mediumScreen}) {
+    position: initial;
   }
 `;
 
