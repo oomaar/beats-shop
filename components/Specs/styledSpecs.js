@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
+import { largeScreen, mediumScreen, smallScreen } from '../../global/styles/GlobalStyle';
 
 export const SpecsContainer = styled.div`
   display: grid;
@@ -57,5 +57,9 @@ export const Img = styled.img`
 
   @media screen and (min-width: ${mediumScreen}) {
     position: initial;
+  }
+
+  @media screen and (min-width: ${largeScreen}) {
+    width: 300px;
   }
 `;
