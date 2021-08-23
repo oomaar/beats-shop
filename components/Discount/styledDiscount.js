@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mediumScreen } from '../../global/styles/GlobalStyle';
+import { largeScreen, mediumScreen } from '../../global/styles/GlobalStyle';
 
 export const DiscountContainer = styled.div`
   display: grid;
@@ -25,6 +25,13 @@ export const DiscountContainer = styled.div`
     align-items: center;
     justify-items: center;
   }
+
+  @media screen and (min-width: ${largeScreen}) {
+    grid-template-columns: 250px max-content;
+    justify-content: center;
+    column-gap: 5rem;
+    padding: 3rem 0;
+  }
 `;
 
 export const DiscountAnimate = styled.div``;
@@ -32,8 +39,17 @@ export const DiscountAnimate = styled.div``;
 export const DiscountTitle = styled.h3`
   font-size: ${({ theme }) => theme.fonts.h3FontSize};
   margin-bottom: 0.75rem;
+
+  @media screen and (min-width: ${largeScreen}) {
+    font-size: ${({ theme }) => theme.fonts.h2FontSize};
+    margin-bottom: 1rem;
+  }
 `;
 
 export const DiscountText = styled.p`
   margin-bottom: 1rem;
+
+  @media screen and (min-width: ${largeScreen}) {
+    margin-bottom: 2rem;
+  }
 `;
