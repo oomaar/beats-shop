@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { smallScreen } from '../../global/styles/GlobalStyle';
 
 export const SpecsContainer = styled.div`
   display: grid;
@@ -43,4 +44,8 @@ export const Img = styled.img`
   position: absolute;
   top: 2rem;
   right: -4rem;
+
+  @media screen and (max-width: ${smallScreen}) {
+    width: 200px;
+  }
 `;
