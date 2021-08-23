@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // Viewprots
 export const smallScreen = "340px";
 export const mediumScreen = "576px";
+export const largeScreen = "767px";
 
 export const headerHeight = '3rem';
 const hueColor = 206;
@@ -68,6 +69,10 @@ export const GlobalStyle = createGlobalStyle`
     font-size: ${({ theme }) => theme.fonts.normalFontSize};
     background-color: ${({ theme }) => theme.colors.bodyColor};
     color: ${({ theme }) => theme.colors.textColor};
+
+    @media screen and (min-width: ${largeScreen}) {
+      margin: 0;
+    }
   }
 
   h1,h2,h3 {
@@ -116,7 +121,13 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 // Section constants
-export const Section = styled.section` padding: 4rem 0 2rem; `;
+export const Section = styled.section`
+  padding: 4rem 0 2rem;
+  
+  @media screen and (min-width: ${largeScreen}) {
+    padding: 6rem 0 2rem;
+  }
+`;
 
 export const SectionTitle = styled.h3`
   background: ${({ gradient, theme }) => gradient && theme.colors.textGradient};
