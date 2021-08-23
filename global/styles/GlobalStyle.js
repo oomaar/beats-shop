@@ -1,6 +1,9 @@
 import { createGlobalStyle } from "styled-components";
 import styled from 'styled-components';
 
+// Viewprots
+export const smallScreen = "340px";
+
 export const headerHeight = '3rem';
 const hueColor = 206;
 
@@ -122,6 +125,10 @@ export const SectionTitle = styled.h3`
   color: ${({ gradient }) => gradient && "transparent"};
   -webkit-background-clip: ${({ gradient }) => gradient && "text"};
   background-clip: ${({ gradient }) => gradient && "text"};
+
+  @media screen and (max-width: ${smallScreen}) {
+    font-size: ${({ theme }) => theme.fonts.bigFontSize};
+  }
 `;
 
 // Main (For animations and images)
@@ -133,6 +140,10 @@ export const Main = styled.main`
 export const Container = styled.div`
   max-width: 968px;
   margin: 0 1.5rem;
+
+  @media screen and (max-width: ${smallScreen}) {
+    margin: 0 1rem;
+  }
 `;
 
 // Buttons
