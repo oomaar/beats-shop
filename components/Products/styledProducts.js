@@ -1,10 +1,16 @@
 import styled from 'styled-components';
+import { smallScreen } from '../../global/styles/GlobalStyle';
 
 export const ProductsContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem 1.5rem;
   padding-top: 3rem;
+
+  @media screen and (max-width: ${smallScreen}) {
+    grid-template-columns: 142px;
+    justify-content: center;
+  }
 `;
 
 export const ProductsCard = styled.article`
