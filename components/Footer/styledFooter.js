@@ -1,9 +1,14 @@
 import styled from 'styled-components';
+import { largeScreen } from '../../global/styles/GlobalStyle';
 
 export const FooterContainer = styled.footer`
   display: grid;
   row-gap: 2rem;
   grid-template-columns: repeat(1, 1fr);
+
+  @media screen and (min-width: ${largeScreen}) {
+    grid-template-columns: 0.4fr 0.7fr 0.7fr 1fr;
+  }
 `;
 
 export const Logo = styled.a`
