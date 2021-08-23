@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { headerHeight } from '../../global';
 import { Link } from "react-scroll";
+import { largeScreen } from '../../global/styles/GlobalStyle';
 
 export const MainHeader = styled.header`
   width: 100%;
@@ -16,11 +17,20 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (min-width: ${largeScreen}) {
+    height: calc(${headerHeight} + 1.5rem);
+  }
 `;
 
 export const Logo = styled.a`
   display: flex;
   width: 1.5rem;
+
+  @media screen and (min-width: ${largeScreen}) {
+    width: 2rem;
+  }
+
 `;
 
 export const NavMenu = styled.div`
@@ -40,6 +50,11 @@ export const NavList = styled.ul`
   flex-direction: column;
   align-items: center;
   row-gap: 1rem;
+
+  @media screen and (min-width: ${largeScreen}) {
+    flex-direction: row;
+    column-gap: 3.5rem;
+  }
 `;
 
 export const NavItem = styled.li`
@@ -67,6 +82,11 @@ export const NavLink = styled(Link)`
     -webkit-background-clip: text;
     background-clip: text;
   }
+
+  @media screen and (min-width: ${largeScreen}) {
+    font-size: ${({ theme }) => theme.fonts.normalFontSize};
+    text-transform: initial;
+  }
 `;
 
 export const NavClose = styled.div`
@@ -76,10 +96,18 @@ export const NavClose = styled.div`
   right: 1rem;
   color: ${({ theme }) => theme.colors.whiteColor};
   cursor: pointer;
+
+  @media screen and (min-width: ${largeScreen}) {
+    display: none;
+  }
 `;
 
 export const NavToggle = styled.div`
   font-size: 1.2rem;
   color: ${({ theme }) => theme.colors.whiteColor};
   cursor: pointer;
+
+  @media screen and (min-width: ${largeScreen}) {
+    display: none;
+  }
 `;
