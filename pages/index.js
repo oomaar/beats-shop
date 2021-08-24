@@ -1,11 +1,10 @@
-import styled from "styled-components";
 import { Header, Feature, Sponsor, Specs, Case, Discount, Products, Footer } from "../components";
 import { HeadTag, Main, ScrollupLink } from "../global";
 import siteData from "../data/siteData.json";
 
 export default function Home() {
   return (
-    <Application>
+    <div>
       <HeadTag title="Beats Shop" />
 
       <Header data={siteData.headerData} />
@@ -19,8 +18,6 @@ export default function Home() {
         <Footer data={siteData.footerData} />
       </Main>
       <ScrollupLink />
-    </Application>
+    </div>
   );
 };
-
-const Application = styled.div``;
