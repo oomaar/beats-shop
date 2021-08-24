@@ -73,6 +73,7 @@ export const Title = styled.h1`
   top: -6rem;
   left: 1rem;
   line-height: 6rem;
+  white-space: nowrap;
 
   @media screen and (max-width: ${smallScreen}) {
     top: -4rem;
