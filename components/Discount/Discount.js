@@ -1,4 +1,5 @@
 import { Button, Container, Section } from "../../global";
+import Fade from "react-reveal/Fade";
 import {
     DiscountContainer,
     DiscountAnimate,
@@ -11,17 +12,21 @@ export const Discount = () => {
         <Section>
             <Container>
                 <DiscountContainer>
-                    <DiscountAnimate>
-                        <DiscountTitle>Immerse yourself in <br /> your music</DiscountTitle>
-                        <DiscountText>Get it now, up to 50% off.</DiscountText>
+                    <Fade left>
+                        <DiscountAnimate>
+                            <DiscountTitle>Immerse yourself in <br /> your music</DiscountTitle>
+                            <DiscountText>Get it now, up to 50% off.</DiscountText>
 
-                        <Button flex>
-                            <i className="ri-shopping-bag-line"></i>
-                            Shop Now
-                        </Button>
-                    </DiscountAnimate>
+                            <Button flex>
+                                <i className="ri-shopping-bag-line"></i>
+                                Shop Now
+                            </Button>
+                        </DiscountAnimate>
+                    </Fade>
 
-                    <img src="/img/discount.png" alt="Discount" />
+                    <Fade right>
+                        <img src="/img/discount.png" alt="Discount" />
+                    </Fade>
                 </DiscountContainer>
             </Container>
         </Section>
