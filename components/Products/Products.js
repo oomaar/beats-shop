@@ -22,6 +22,7 @@ export const Products = ({ data }) => {
             </ProductsContent>
         </ProductsCard>
     ));
+
     return (
         <Section id="products">
             <Fade down>
@@ -36,5 +37,5 @@ export const Products = ({ data }) => {
                 </Fade>
             </Container>
         </Section>
-    )
-}
+    );
+};
