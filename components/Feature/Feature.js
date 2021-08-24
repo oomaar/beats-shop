@@ -6,10 +6,8 @@ import {
     HomeHeader,
     Title,
     SubTitle,
-    HomeFooter,
     FooterTitle,
     Text,
-    ButtonSpan,
     ButtonIcon,
     HomePrice,
 } from "./styledFeature";
@@ -34,19 +32,19 @@ export const Feature = ({ data }) => {
                             </HomeHeader>
                         </Fade>
                         <Fade up>
-                            <HomeFooter>
+                            <div>
                                 <FooterTitle>Overview</FooterTitle>
                                 <Text>{data.text}</Text>
                                 <Button flex>
                                     <ButtonIcon>
                                         <i className="ri-shopping-bag-line"></i>
                                     </ButtonIcon>
-                                    <ButtonSpan>
+                                    <span>
                                         Add to Bag
-                                    </ButtonSpan>
+                                    </span>
                                     <HomePrice>$299</HomePrice>
                                 </Button>
-                            </HomeFooter>
+                            </div>
                         </Fade>
                     </HomeData>
                 </FeatureContainer>

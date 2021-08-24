@@ -89,8 +89,6 @@ export const SubTitle = styled.h2`
   margin-bottom: 2.5rem;
 `;
 
-export const HomeFooter = styled.div``;
-
 export const FooterTitle = styled.h3`
   font-size: ${({ theme }) => theme.fonts.h3FontSize};
   font-weight: ${({ theme }) => theme.fonts.fontWeight.medium};
@@ -119,5 +117,3 @@ export const HomePrice = styled.span`
 export const ButtonIcon = styled.div`
   font-size: 1.2rem;
 `;
-
-export const ButtonSpan = styled.span``;
