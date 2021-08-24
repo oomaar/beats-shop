@@ -29,9 +29,11 @@ export const Products = ({ data }) => {
             </Fade>
 
             <Container>
-                <ProductsContainer>
-                    {productsData}
-                </ProductsContainer>
+                <Fade up>
+                    <ProductsContainer>
+                        {productsData}
+                    </ProductsContainer>
+                </Fade>
             </Container>
         </Section>
     )
