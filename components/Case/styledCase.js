@@ -38,8 +38,6 @@ export const Img = styled.img`
   }
 `;
 
-export const CaseData = styled.div``;
-
 export const Text = styled.p`
   margin-bottom: 1.5rem;
   line-height: ${({ theme }) => theme.fonts.textLineHeight};
