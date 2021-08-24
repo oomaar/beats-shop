@@ -35,7 +35,7 @@ export const Header = ({ data }) => {
             </NavLink>
         </NavItem>
     ));
-    // onClick={() => activeLink(link.href)}
+
     useEffect(() => {
         window.addEventListener("scroll", showScorllHeader);
     }, []);
@@ -65,5 +65,5 @@ export const Header = ({ data }) => {
                 </Nav>
             </Container>
         </MainHeader>
-    )
-}
+    );
+};
