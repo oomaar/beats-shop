@@ -70,6 +70,7 @@ export const GlobalStyle = createGlobalStyle`
     font-size: ${({ theme }) => theme.fonts.normalFontSize};
     background-color: ${({ theme }) => theme.colors.bodyColor};
     color: ${({ theme }) => theme.colors.textColor};
+    cursor: url('/cursor.svg'), auto;
 
     @media screen and (min-width: ${largeScreen}) {
       margin: 0;
