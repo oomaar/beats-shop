@@ -13,34 +13,41 @@ import {
     ButtonIcon,
     HomePrice,
 } from "./styledFeature";
+import Fade from 'react-reveal/Fade';
 
 export const Feature = ({ data }) => {
     return (
         <Section id="home">
             <Container>
                 <FeatureContainer>
-                    <ImageContainer>
-                        <img src="/img/home.png" alt="Home Image" />
-                    </ImageContainer>
+                    <Fade down>
+                        <ImageContainer>
+                            <img src="/img/home.png" alt="Home Image" />
+                        </ImageContainer>
+                    </Fade>
 
                     <HomeData>
-                        <HomeHeader>
-                            <Title>On ear</Title>
-                            <SubTitle>Beats 3</SubTitle>
-                        </HomeHeader>
-                        <HomeFooter>
-                            <FooterTitle>Overview</FooterTitle>
-                            <Text>{data.text}</Text>
-                            <Button flex>
-                                <ButtonIcon>
-                                    <i className="ri-shopping-bag-line"></i>
-                                </ButtonIcon>
-                                <ButtonSpan>
-                                    Add to Bag
-                                </ButtonSpan>
-                                <HomePrice>$299</HomePrice>
-                            </Button>
-                        </HomeFooter>
+                        <Fade up>
+                            <HomeHeader>
+                                <Title>On ear</Title>
+                                <SubTitle>Beats 3</SubTitle>
+                            </HomeHeader>
+                        </Fade>
+                        <Fade up>
+                            <HomeFooter>
+                                <FooterTitle>Overview</FooterTitle>
+                                <Text>{data.text}</Text>
+                                <Button flex>
+                                    <ButtonIcon>
+                                        <i className="ri-shopping-bag-line"></i>
+                                    </ButtonIcon>
+                                    <ButtonSpan>
+                                        Add to Bag
+                                    </ButtonSpan>
+                                    <HomePrice>$299</HomePrice>
+                                </Button>
+                            </HomeFooter>
+                        </Fade>
                     </HomeData>
                 </FeatureContainer>
             </Container>
