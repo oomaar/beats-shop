@@ -3,17 +3,17 @@ import { largeScreen, mediumScreen, smallScreen } from '../../global/styles/Glob
 
 export const SpecsContainer = styled.div`
   display: grid;
+`;
+
+export const SpecsSubContainer = styled.div`
+  display: grid;
+  position: relative;
 
   @media screen and (min-width: ${mediumScreen}) {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     align-items: center;
   }
-`;
-
-export const SpecsSubContainer = styled.div`
-  display: grid;
-  position: relative;
 `;
 
 export const SpecsContent = styled.div`

@@ -1,4 +1,5 @@
 import { Container, Section, SectionTitle } from "../../global";
+import Fade from 'react-reveal/Fade';
 import {
     SpecsContainer,
     SpecsSubContainer,
@@ -27,19 +28,23 @@ export const Specs = ({ data }) => {
 
     return (
         <Section id="specs">
-            <SpecsContainer>
+            <Fade down>
                 <SectionTitle gradient>Specs</SectionTitle>
-
+            </Fade>
+            <SpecsContainer>
                 <div>
                     <Container>
                         <SpecsSubContainer>
-                            <SpecsContent>
-                                {specsData}
-                            </SpecsContent>
-
-                            <div>
-                                <Img src="/img/specs.png" alt="" />
-                            </div>
+                            <Fade left>
+                                <SpecsContent>
+                                    {specsData}
+                                </SpecsContent>
+                            </Fade>
+                            <Fade right>
+                                <div>
+                                    <Img src="/img/specs.png" alt="" />
+                                </div>
+                            </Fade>
                         </SpecsSubContainer>
                     </Container>
                 </div>
