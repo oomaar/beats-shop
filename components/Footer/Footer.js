@@ -1,4 +1,5 @@
 import { Button, Container, Section } from "../../global";
+import Fade from "react-reveal/Fade";
 import {
     FooterContainer,
     Logo,
@@ -35,45 +36,47 @@ export const Footer = ({ data }) => {
     return (
         <Section>
             <Container>
-                <FooterContainer>
-                    <Logo href="#">
-                        <img src="/img/logo.png" alt="Logo" />
-                    </Logo>
+                <Fade up>
+                    <FooterContainer>
+                        <Logo href="#">
+                            <img src="/img/logo.png" alt="Logo" />
+                        </Logo>
 
-                    <FooterContent>
-                        <FooterTitle>Products</FooterTitle>
+                        <FooterContent>
+                            <FooterTitle>Products</FooterTitle>
 
-                        <FooterLinks>
-                            {productsLinks}
-                        </FooterLinks>
-                    </FooterContent>
+                            <FooterLinks>
+                                {productsLinks}
+                            </FooterLinks>
+                        </FooterContent>
 
-                    <FooterContent>
-                        <FooterTitle>Support</FooterTitle>
+                        <FooterContent>
+                            <FooterTitle>Support</FooterTitle>
 
-                        <FooterLinks>
-                            {supportLinks}
-                        </FooterLinks>
-                    </FooterContent>
+                            <FooterLinks>
+                                {supportLinks}
+                            </FooterLinks>
+                        </FooterContent>
 
-                    <FooterContent>
-                        <Form action="">
-                            <Input type="email" placeholder="Email Address" />
-                            <Button flex>
-                                <i className="ri-send-plane-line"></i>
-                                Subscribe
-                            </Button>
-                        </Form>
+                        <FooterContent>
+                            <Form action="">
+                                <Input type="email" placeholder="Email Address" />
+                                <Button flex>
+                                    <i className="ri-send-plane-line"></i>
+                                    Subscribe
+                                </Button>
+                            </Form>
 
-                        <FooterSocial>
-                            {socialLinks}
-                        </FooterSocial>
-                    </FooterContent>
-                </FooterContainer>
+                            <FooterSocial>
+                                {socialLinks}
+                            </FooterSocial>
+                        </FooterContent>
+                    </FooterContainer>
 
-                <FooterCopy>
-                    <HSix>&#169; Beats. All Rights Reserved</HSix>
-                </FooterCopy>
+                    <FooterCopy>
+                        <HSix>&#169; Beats. All Rights Reserved</HSix>
+                    </FooterCopy>
+                </Fade>
             </Container>
         </Section>
     )
