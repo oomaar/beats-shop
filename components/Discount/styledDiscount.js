@@ -38,8 +38,6 @@ export const DiscountContainer = styled.div`
   }
 `;
 
-export const DiscountAnimate = styled.div``;
-
 export const DiscountTitle = styled.h3`
   font-size: ${({ theme }) => theme.fonts.h3FontSize};
   margin-bottom: 0.75rem;

@@ -2,7 +2,6 @@ import { Button, Container, Section } from "../../global";
 import Fade from "react-reveal/Fade";
 import {
     DiscountContainer,
-    DiscountAnimate,
     DiscountTitle,
     DiscountText,
 } from "./styledDiscount";
@@ -13,7 +12,7 @@ export const Discount = () => {
             <Container>
                 <DiscountContainer>
                     <Fade left>
-                        <DiscountAnimate>
+                        <div>
                             <DiscountTitle>Immerse yourself in <br /> your music</DiscountTitle>
                             <DiscountText>Get it now, up to 50% off.</DiscountText>
 
@@ -21,7 +20,7 @@ export const Discount = () => {
                                 <i className="ri-shopping-bag-line"></i>
                                 Shop Now
                             </Button>
-                        </DiscountAnimate>
+                        </div>
                     </Fade>
 
                     <Fade right>
