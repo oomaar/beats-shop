@@ -26,7 +26,7 @@ export const Img = styled.img`
   @media screen and (max-width: ${smallScreen}) {
     width: 220px;
     top: -2rem;
-    left: -9rem;
+    left: -7rem;
   }
 
   @media screen and (min-width: ${mediumScreen}) {

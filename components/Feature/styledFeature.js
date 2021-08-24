@@ -22,7 +22,8 @@ export const ImageContainer = styled.div`
     right: 1.5rem;
 
     @media screen and (max-width: ${smallScreen}) {
-      width: 200px;
+      width: 150px;
+      top: -10rem;
     }
 
     @media screen and (min-width: ${mediumScreen}) {
@@ -75,6 +76,7 @@ export const Title = styled.h1`
 
   @media screen and (max-width: ${smallScreen}) {
     top: -4rem;
+    left: -2rem;
     font-size: ${({ theme }) => theme.fonts.biggerFontSize};
   }
 
@@ -86,7 +88,7 @@ export const Title = styled.h1`
 
 export const SubTitle = styled.h2`
   font-size: ${({ theme }) => theme.fonts.bigFontSize};
-  margin-bottom: 2.5rem;
+  margin: 2.5rem 0;
 `;
 
 export const FooterTitle = styled.h3`
