@@ -5,11 +5,14 @@ import {
     CaseData,
     Text,
 } from "./styledCase";
+import Fade from 'react-reveal/Fade';
 
 export const Case = ({ data }) => {
     return (
         <Section id="case">
-            <SectionTitle gradient>Case</SectionTitle>
+            <Fade down>
+                <SectionTitle gradient>Case</SectionTitle>
+            </Fade>
 
             <Container>
                 <CaseContainer>

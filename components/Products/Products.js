@@ -1,4 +1,5 @@
 import { Button, Container, Section, SectionTitle } from "../../global";
+import Fade from 'react-reveal/Fade';
 import {
     ProductsContainer,
     ProductsCard,
@@ -23,7 +24,9 @@ export const Products = ({ data }) => {
     ));
     return (
         <Section id="products">
-            <SectionTitle gradient>Choose <br /> Your Style</SectionTitle>
+            <Fade down>
+                <SectionTitle gradient>Choose <br /> Your Style</SectionTitle>
+            </Fade>
 
             <Container>
                 <ProductsContainer>
