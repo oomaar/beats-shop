@@ -19,8 +19,6 @@ export const Logo = styled.a`
   width: 2rem;
 `;
 
-export const FooterContent = styled.div``;
-
 export const FooterTitle = styled.h3`
   font-size: ${({ theme }) => theme.fonts.h3FontSize};
   font-weight: ${({ theme }) => theme.fonts.fontWeight.medium};

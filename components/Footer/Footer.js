@@ -42,23 +42,23 @@ export const Footer = ({ data }) => {
                             <img src="/img/logo.png" alt="Logo" />
                         </Logo>
 
-                        <FooterContent>
+                        <div>
                             <FooterTitle>Products</FooterTitle>
 
                             <FooterLinks>
                                 {productsLinks}
                             </FooterLinks>
-                        </FooterContent>
+                        </div>
 
-                        <FooterContent>
+                        <div>
                             <FooterTitle>Support</FooterTitle>
 
                             <FooterLinks>
                                 {supportLinks}
                             </FooterLinks>
-                        </FooterContent>
+                        </div>
 
-                        <FooterContent>
+                        <div>
                             <Form action="">
                                 <Input type="email" placeholder="Email Address" />
                                 <Button flex>
@@ -70,7 +70,7 @@ export const Footer = ({ data }) => {
                             <FooterSocial>
                                 {socialLinks}
                             </FooterSocial>
-                        </FooterContent>
+                        </div>
                     </FooterContainer>
 
                     <FooterCopy>
