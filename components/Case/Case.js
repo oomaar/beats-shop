@@ -16,18 +16,22 @@ export const Case = ({ data }) => {
 
             <Container>
                 <CaseContainer>
-                    <div>
-                        <Img src="/img/case.png" alt="case" />
-                    </div>
+                    <Fade up>
+                        <div>
+                            <Img src="/img/case.png" alt="case" />
+                        </div>
+                    </Fade>
 
-                    <CaseData>
-                        <Text>{data.text}</Text>
+                    <Fade down>
+                        <CaseData>
+                            <Text>{data.text}</Text>
 
-                        <Button flex>
-                            <i className="ri-information-line"></i>
-                            More info
-                        </Button>
-                    </CaseData>
+                            <Button flex>
+                                <i className="ri-information-line"></i>
+                                More info
+                            </Button>
+                        </CaseData>
+                    </Fade>
                 </CaseContainer>
             </Container>
         </Section>
